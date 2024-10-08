@@ -1,7 +1,9 @@
- const express = require('express')
- const path = require('path')
+ //const express = require('express')
+ import express from 'express'
+ //const path = require('path')
+import path from 'path'
 
- const startServer = (options)=>{
+export  const startServer = (options)=>{
     const {port,public_path='public'} = options
    const app = express()
    //para usar middleware se usa la palabra use
@@ -14,4 +16,4 @@
         console.log(`escuchando en el puerto 3000`)
     })
  }
-module.exports = {startServer}
+
